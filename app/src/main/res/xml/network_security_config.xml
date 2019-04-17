@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--默认允许所有网址使用非安全连接-->
+    <base-config cleartextTrafficPermitted="true" />
+    <!--&lt;!&ndash;信鸽Android P的适配&ndash;&gt;-->
+    <!--<domain-config cleartextTrafficPermitted="true">-->
+        <!--&lt;!&ndash;允许以下网址使用非安全的连接&ndash;&gt;-->
+        <!--<domain includeSubdomains="true">182.254.116.117</domain>-->
+        <!--<domain includeSubdomains="true">pingma.qq.com</domain>-->
+    <!--</domain-config>-->
+</network-security-config>

@@ -36,17 +36,26 @@ import cn.jpush.android.api.JPushInterface;
  */
 public class App extends MultiDexApplication {
 
+    private static App mInstance;
     private static final String TAG = "Application";
 
     @Override
     public void onCreate() {
         super.onCreate();
+        mInstance = this;
         // Initialize JPush
         initJPush();
         // Initialize TBS Browser Kernel
         initTBSX5();
         // Initialize AMap Map Location
         initLocation();
+    }
+
+    /**
+     * 全局实例
+     */
+    public static App getInstance() {
+        return mInstance;
     }
 
     /**
@@ -84,7 +93,7 @@ public class App extends MultiDexApplication {
     /**
      * 初始化高德地图定位
      */
-    private void initLocation(){
+    private void initLocation() {
         LocationUtil.getInstance().init(this);
     }
 

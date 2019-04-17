@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_dashboard:
                     mTextMessage.setText(R.string.title_dashboard);
-                    intent.setClass(MainActivity.this, FullscreenActivity.class);
+                    intent.setClass(MainActivity.this, MonitorActivity.class);
                     MainActivity.this.startActivity(intent);
                     return true;
                 case R.id.navigation_information:

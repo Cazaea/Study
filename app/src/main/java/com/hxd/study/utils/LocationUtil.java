@@ -73,26 +73,6 @@ public class LocationUtil implements AMapLocationListener {
     }
 
     /**
-     * 叫醒休眠的CPU
-     */
-    private void initWakeUpService() {
-        // 创建Intent对象，action为LOCATION
-        mAlarmIntent = new Intent();
-        mAlarmIntent.setAction("LOCATION");
-        IntentFilter ift = new IntentFilter();
-        // 定义一个PendingIntent对象，PendingIntent.getBroadcast包含了sendBroadcast的动作。
-        // 也就是发送了action 为"LOCATION"的intent
-        mAlarmPendingIntent = PendingIntent.getBroadcast(mContext, 0, mAlarmIntent, 0);
-        // AlarmManager对象,注意这里并不是new一个对象，AlarmManager为系统级服务
-        mAlarmManager = (AlarmManager) mContext.getSystemService(ALARM_SERVICE);
-
-        // 动态注册一个广播
-        IntentFilter filter = new IntentFilter();
-        filter.addAction("LOCATION");
-        mContext.registerReceiver(alarmReceiver, filter);
-    }
-
-    /**
      * 高德定位初始化
      */
     private void initLocation() {
@@ -117,7 +97,7 @@ public class LocationUtil implements AMapLocationListener {
         mLocationOption.setOnceLocationLatest(true);
 
         // 设置定位间隔,单位毫秒,默认为2000ms，最低1000ms。
-        mLocationOption.setInterval(2000);
+        mLocationOption.setInterval(3000);
 
         // 设置是否返回地址信息（默认返回地址信息）
         mLocationOption.setNeedAddress(true);
@@ -128,6 +108,26 @@ public class LocationUtil implements AMapLocationListener {
         // 关闭缓存机制
         mLocationOption.setLocationCacheEnable(false);
 
+    }
+
+    /**
+     * 叫醒休眠的CPU
+     */
+    private void initWakeUpService() {
+        // 创建Intent对象，action为LOCATION
+        mAlarmIntent = new Intent();
+        mAlarmIntent.setAction("LOCATION");
+        IntentFilter ift = new IntentFilter();
+        // 定义一个PendingIntent对象，PendingIntent.getBroadcast包含了sendBroadcast的动作。
+        // 也就是发送了action 为"LOCATION"的intent
+        mAlarmPendingIntent = PendingIntent.getBroadcast(mContext, 0, mAlarmIntent, 0);
+        // AlarmManager对象,注意这里并不是new一个对象，AlarmManager为系统级服务
+        mAlarmManager = (AlarmManager) mContext.getSystemService(ALARM_SERVICE);
+
+        // 动态注册一个广播
+        IntentFilter filter = new IntentFilter();
+        filter.addAction("LOCATION");
+        mContext.registerReceiver(alarmReceiver, filter);
     }
 
     @Override

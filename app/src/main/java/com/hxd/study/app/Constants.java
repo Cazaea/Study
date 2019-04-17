@@ -10,6 +10,23 @@ package com.hxd.study.app;
 public class Constants {
 
     /**
+     * 萤石配置
+     */
+    public static final String EZUI_APP_KEY = "26810f3acd794862b608b6cfbc32a6b8";
+    public static final String EZUI_ACCESS_TOKEN = "ra.58e224hfdbbimf2e28bpxppx7jnzdf1c-5q574p3rgd-1mfnuds-hgfzpaxee";
+    /**
+     * 萤石直播地址
+     */
+    public static final String EZUI_HLS_URL = "http://hls01open.ys7.com/openlive/f01018a141094b7fa138b9d0b856507b.m3u8";
+    public static final String EZUI_HLS_URL_HD = "http://hls01open.ys7.com/openlive/f01018a141094b7fa138b9d0b856507b.hd.m3u8";
+    public static final String EZUI_RTMP_URL = "rtmp://rtmp01open.ys7.com/openlive/f01018a141094b7fa138b9d0b856507b";
+    public static final String EZUI_RTMP_URL_HD = "rtmp://rtmp01open.ys7.com/openlive/f01018a141094b7fa138b9d0b856507b.hd";
+
+    public static final String EZUI_EZOPEN_REC = "ezopen://open.ys7.com/203751922/1.rec";
+    public static final String EZUI_EZOPEN_URL = "ezopen://open.ys7.com/203751922/1.live";
+    public static final String EZUI_EZOPEN_URL_HD = "ezopen://open.ys7.com/203751922/1.hd.live";
+
+    /**
      * Router
      */
     public static final String ROUTER_HEAD = "ngtc";
