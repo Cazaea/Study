@@ -20,7 +20,18 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
-##------------------------------高德地图定位------------------------------##
+##------------------------------高德定位SDK------------------------------##
 -keep class com.amap.api.location.**{*;}
 -keep class com.amap.api.fence.**{*;}
 -keep class com.autonavi.aps.amapapi.model.**{*;}
+
+##------------------------------极光推送SDK------------------------------##
+-dontoptimize
+-dontpreverify
+
+-dontwarn cn.jpush.**
+-keep class cn.jpush.** { *; }
+-keep class * extends cn.jpush.android.helpers.JPushMessageReceiver { *; }
+
+-dontwarn cn.jiguang.**
+-keep class cn.jiguang.** { *; }

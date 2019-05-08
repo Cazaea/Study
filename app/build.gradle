@@ -20,6 +20,7 @@ android {
             // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
         }
 
+        // 自动集成JPush
         manifestPlaceholders = [
                 JPUSH_PKGNAME: applicationId,
                 JPUSH_APPKEY : "cd980931bd54d16518bb31e0",
@@ -46,8 +47,8 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     // Android Test
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.2.0-alpha03'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha03'
+    androidTestImplementation 'androidx.test:runner:1.2.0-alpha05'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha05'
     // 基础组件
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
@@ -61,7 +62,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging:17.6.0'
     implementation 'com.google.android.gms:play-services-ads:17.2.0'
     implementation 'com.google.android.gms:play-services-auth:16.0.1'
-    implementation 'com.google.android.material:material:1.1.0-alpha05'
+    implementation 'com.google.android.material:material:1.1.0-alpha06'
     // 极光推送
     implementation files('libs/jpush-android-3.2.0.jar')
     implementation files('libs/jcore-android-1.2.7.jar')
