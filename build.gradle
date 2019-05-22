@@ -18,6 +18,12 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "http://central.maven.org/maven2/" }
+
+        // 添加下面的内容
+        flatDir {
+            dirs 'libs'
+        }
         
     }
 }

@@ -7,6 +7,8 @@
       <w>ezopen</w>
       <w>ezui</w>
       <w>jpush</w>
+      <w>privatekey</w>
+      <w>publickey</w>
     </words>
   </dictionary>
 </component>

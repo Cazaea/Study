@@ -87,6 +87,14 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <!-- ⒸⒶⓏⒶⒺⒶ☯☯☯☯☯☯♔♔♔〖萤石摄像头监控〗♔♔♔☯☯☯☯☯☯ⒷⒶⓏⒶⓇⒶ -->
 
+    <!-- ▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨〖支付宝支付〗▧▧▧▧▧▧▧▧▧▧▧▧▧▧▧ -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- ⒸⒶⓏⒶⒺⒶ☯☯☯☯☯☯♔♔♔〖支付宝支付〗♔♔♔☯☯☯☯☯☯ⒷⒶⓏⒶⓇⒶ -->
+
     <!-- ▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨〖Api>=26 特殊权限声明〗▧▧▧▧▧▧▧▧▧▧▧▧▧▧▧ -->
     <!-- Android8.0安装权限 -->
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
