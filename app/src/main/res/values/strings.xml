@@ -202,4 +202,13 @@
     <string name="title_item_detail">Item Detail</string>
     <string name="title_activity_tabbed">TabbedActivity</string>
     <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
 </resources>

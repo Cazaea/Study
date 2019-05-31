@@ -9,6 +9,8 @@ package com.hxd.study.app;
  */
 public class Constants {
 
+    public static final String WX_APP_ID = "wxe9f42c22b4f32e67";
+
     /**
      * 萤石配置
      */

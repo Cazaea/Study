@@ -3,12 +3,14 @@
     <words>
       <w>amap</w>
       <w>apikey</w>
+      <w>appid</w>
       <w>appkey</w>
       <w>ezopen</w>
       <w>ezui</w>
       <w>jpush</w>
       <w>privatekey</w>
       <w>publickey</w>
+      <w>wechart</w>
     </words>
   </dictionary>
 </component>

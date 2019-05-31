@@ -77,8 +77,9 @@ dependencies {
     // 萤石监控
     implementation files('libs/EZUIKit_2.0.jar')
     implementation files('libs/EZOpenSDK_V4.8.3.20180530.jar')
+    // 微信支付
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.3.1'
     // 支付宝支付
-//    implementation files('libs/alipaySdk-15.6.2-20190416165100-noUtdid.aar')
     implementation (name: 'alipaySdk-15.6.2-20190416165100-noUtdid', ext: 'aar')
     // 基础依赖
     implementation 'com.google.code.gson:gson:2.8.5'

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Apr 19 15:47:45 CST 2019
+#Fri May 31 11:37:26 CST 2019
 7.path=lib/arm64-v8a/libjcore127.so
 2.base=D\:\\AProjects\\AnTest\\Study\\JPushExample(1266618)\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
 5.set=NATIVE_RESOURCE
