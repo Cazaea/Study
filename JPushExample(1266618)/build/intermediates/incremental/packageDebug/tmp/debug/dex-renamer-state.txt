@@ -1,4 +1,0 @@
-#Fri May 31 11:37:26 CST 2019
-base.0=D\:\\AProjects\\AnTest\\Study\\JPushExample(1266618)\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
-path.0=classes.dex
-renamed.0=classes.dex
