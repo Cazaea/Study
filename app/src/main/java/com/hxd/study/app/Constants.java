@@ -12,6 +12,13 @@ public class Constants {
     public static final String WX_APP_ID = "wxe9f42c22b4f32e67";
 
     /**
+     * EasyAR ID
+     */
+    public static final String EASYAR_APP_KEY = "QElScUBzWp1mKtAFg3NL9cXjvMeFlDJe5E0Oi79LDwGz6WMWrIlC5y99TFwcvfxw4pWBGmYWJYNelR8zr0opMvNfWWqrgCNVYYWQjANxJlErQ6WH5ogeo4M8edwW4VVBRmWJF0uGOdtrS9NAWhI7MS9xFeTaxpTaOJVfNNjNLtU4qmY8Vd4ITJOCMzh4R7f6wtqPUGQA";
+    public static final String EASYAR_TEST_VIDEO = "https://sightpvideo-cdn.sightp.com/sdkvideo/EasyARSDKShow201520.mp4";
+    public static final String EASYAR_PROJECT_VIDEO = "http://imgcdn.huixdou.com/2019/051/21/d7934d5ea7e646158484ee045a3f14c2.mp4";
+
+    /**
      * 萤石配置
      */
     public static final String EZUI_APP_KEY = "26810f3acd794862b608b6cfbc32a6b8";

@@ -87,6 +87,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <!-- ⒸⒶⓏⒶⒺⒶ☯☯☯☯☯☯♔♔♔〖萤石摄像头监控〗♔♔♔☯☯☯☯☯☯ⒷⒶⓏⒶⓇⒶ -->
 
+    <!-- ▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨〖AR扫描〗▧▧▧▧▧▧▧▧▧▧▧▧▧▧▧ -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <!-- ▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨〖支付宝支付〗▧▧▧▧▧▧▧▧▧▧▧▧▧▧▧ -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -291,6 +294,11 @@
         <activity
             android:name=".ui.PayActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ARActivity"
+            android:screenOrientation="unspecified"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
 
         <activity
             android:name=".TabbedActivity"

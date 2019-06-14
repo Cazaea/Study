@@ -38,12 +38,13 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_dashboard:
                     mTextMessage.setText(R.string.title_dashboard);
-                    intent.setClass(MainActivity.this, MonitorActivity.class);
+//                    intent.setClass(MainActivity.this, MonitorActivity.class);
+                    intent.setClass(MainActivity.this, PayActivity.class);
                     MainActivity.this.startActivity(intent);
                     return true;
                 case R.id.navigation_information:
                     mTextMessage.setText(R.string.title_information);
-                    intent.setClass(MainActivity.this, PayActivity.class);
+                    intent.setClass(MainActivity.this, ARActivity.class);
 //                    intent.setClass(MainActivity.this, SettingsActivity.class);
 //                    intent.setClass(MainActivity.this, AdMobActivity.class);
                     MainActivity.this.startActivity(intent);
