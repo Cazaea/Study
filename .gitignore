@@ -11,3 +11,7 @@
 /build
 /captures
 .externalNativeBuild
+release.properties
+src/main/java/com/hxd/study/base/
+src/main/java/com/hxd/study/bean/
+src/main/java/com/hxd/study/http/

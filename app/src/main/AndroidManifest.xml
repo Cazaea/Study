@@ -108,6 +108,9 @@
     <uses-permission android:name="android.permission.NFC_TRANSACTION_EVENT" />
     <!-- ⒸⒶⓏⒶⒺⒶ☯☯☯☯☯☯♔♔♔〖Api>=28 特殊权限声明〗♔♔♔☯☯☯☯☯☯ⒷⒶⓏⒶⓇⒶ -->
 
+    <!-- ▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨〖Android Q 新特性权限〗▧▧▧▧▧▧▧▧▧▧▧▧▧▧▧ -->
+    <!-- ⒸⒶⓏⒶⒺⒶ☯☯☯☯☯☯♔♔♔〖Android Q 新特性权限〗♔♔♔☯☯☯☯☯☯ⒷⒶⓏⒶⓇⒶ -->
+
     <application
         android:name=".app.App"
         android:allowBackup="true"

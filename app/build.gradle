@@ -1,11 +1,27 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    signingConfigs {
+        Properties properties = new Properties()
+        File propFile = rootProject.file('release.properties')
+        if (propFile.exists()) {
+            properties.load(propFile.newDataInputStream())
+        }
+        release {
+            keyAlias properties.getProperty("RELEASE_KEY_ALIAS")
+            keyPassword properties.getProperty("RELEASE_KEY_PASSWORD")
+            storeFile file(properties.getProperty("RELEASE_STORE_FILE"))
+            storePassword properties.getProperty("RELEASE_STORE_PASSWORD")
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    compileSdkVersion 29
     defaultConfig {
         applicationId "com.hxd.study"
         minSdkVersion 19
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -17,7 +33,6 @@ android {
         ndk {
             // 选择要添加的对应 cpu 类型的 .so 库。
             abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
-            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
         }
 
         // 自动集成JPush
@@ -36,10 +51,19 @@ android {
     }
 
     buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
+    }
+    // 避免 lint 检测出错时停止构建
+    lintOptions {
+        abortOnError false
     }
 }
 
@@ -82,7 +106,11 @@ dependencies {
     // 微信支付
     implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.3.1'
     // 支付宝支付
-    implementation (name: 'alipaySdk-15.6.2-20190416165100-noUtdid', ext: 'aar')
+    implementation(name: 'alipaySdk-15.6.2-20190416165100-noUtdid', ext: 'aar')
+
+    // QMUI:腾讯UI库
+    implementation 'com.qmuiteam:qmui:1.3.1'
+    implementation 'com.qmuiteam:arch:0.5.0'
 
 }
 
