@@ -3,6 +3,7 @@ package com.hxd.study.app;
 import android.util.Log;
 
 import com.hxd.study.utils.LocationUtil;
+import com.qmuiteam.qmui.arch.QMUISwipeBackActivityManager;
 import com.tencent.smtt.sdk.QbSdk;
 
 import androidx.multidex.MultiDexApplication;
@@ -49,6 +50,8 @@ public class App extends MultiDexApplication {
         initTBSX5();
         // Initialize AMap Map Location
         initLocation();
+        // Initialize Swipe Back
+        initSwipeBack();
     }
 
     /**
@@ -95,6 +98,14 @@ public class App extends MultiDexApplication {
      */
     private void initLocation() {
         LocationUtil.getInstance().init(this);
+    }
+
+    /**
+     * 滑动返回页面
+     */
+    private void initSwipeBack(){
+//        QDUpgradeManager.getInstance(this).check();
+        QMUISwipeBackActivityManager.init(this);
     }
 
 }

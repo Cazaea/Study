@@ -18,6 +18,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'https://jitpack.io' }
         maven { url "http://central.maven.org/maven2/" }
 
         // 支付宝 SDK AAR 包所需的配置

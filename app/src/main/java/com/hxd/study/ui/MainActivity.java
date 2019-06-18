@@ -6,13 +6,11 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.hxd.study.AdMobActivity;
-import com.hxd.study.FullscreenActivity;
 import com.hxd.study.ItemListActivity;
 import com.hxd.study.R;
 import com.hxd.study.ScrollingActivity;
-import com.hxd.study.SettingsActivity;
 import com.hxd.study.TabbedActivity;
+import com.hxd.study.ui.settings.SettingsActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -44,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_information:
                     mTextMessage.setText(R.string.title_information);
-                    intent.setClass(MainActivity.this, ARActivity.class);
-//                    intent.setClass(MainActivity.this, SettingsActivity.class);
+//                    intent.setClass(MainActivity.this, ARActivity.class);
+                    intent.setClass(MainActivity.this, SettingsActivity.class);
 //                    intent.setClass(MainActivity.this, AdMobActivity.class);
                     MainActivity.this.startActivity(intent);
                     return true;
